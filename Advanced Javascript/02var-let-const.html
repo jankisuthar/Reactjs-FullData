@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //internal
+
+        //var : re-declaration and re-assign both allowe
+        var a = 12; 
+        console.log(a);
+        a = "Hello"; //re-assign
+        console.log(a);
+        var a = 78; //re-declare
+        console.log(a);
+
+
+        //let  : re-assign allowed but re-declaration not allowed
+        let b = 45;
+        console.log(b);
+        b = "demo"; //re-assign
+        console.log(b);
+        // let b = 78; //re-declare not allowed
+        // console.log(b);
+
+
+        //const : re-assign and re-declaration both not allowed
+        const c = 56;
+        console.log(c);
+
+        // c = "whatever"; //re-assign not allowed
+        // console.log(c);
+
+        const c =  23;
+        console.log(c); //re-declaration not allowed
+    </script>
+</body>
+</html>
+<!-- extrenal js -->
+<!-- <script src="demo.js"></script> -->

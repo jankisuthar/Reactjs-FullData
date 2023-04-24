@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class Demo
+    {
+        constructor(name)
+        {
+            console.log(name);
+        }
+    }
+    new Demo("Tops");
+
+
+    class Myclass
+    {
+        constructor(fname,lname)
+        {
+            // this.fname = "Tops";
+            // this.lname = "Tech";
+
+            this.fname = fname;
+            this.lname = lname;
+        }
+    }
+    const data = new Myclass("tops","tech");
+    console.log(data);
+
+
+    class Addition{
+        constructor(num1,num2)
+        {
+            this.num1 = num1;
+            this.num2 = num2;
+            console.log(this.num1+this.num2);
+        }
+    }
+    const add=new Addition(4,5);
+    console.log(add);
+</script>
+
+

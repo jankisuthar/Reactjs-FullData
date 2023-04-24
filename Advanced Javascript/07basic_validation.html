@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" onsubmit="return ValidData()">
+        <table border="1" align="center">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" id="pwd"></td>
+            </tr>
+            <tr>
+                <td>Mobile:</td>
+                <td><input type="text" id="mobile"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="submit" value="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+<script>
+    function ValidData()
+    {
+        var name = document.getElementById('name').value;
+        console.log(name);
+        if(name == "")
+        {
+            alert("Please enter name!");
+            return false;
+        }
+
+        var email = document.getElementById('email').value;
+        if(email == "")
+        {
+            
+            alert("Please enter Email!");
+            return false;
+        }
+
+        var pwd = document.getElementById('pwd').value;
+        if(pwd == "")
+        {
+            
+            alert("Please enter password!");
+            return false;
+        }
+        var mobile = document.getElementById('mobile').value;
+        if(mobile == "")
+        {
+            
+            alert("Please enter Mobile!");
+            return false;
+        }
+    }
+</script>
